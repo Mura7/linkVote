@@ -1,0 +1,22 @@
+@import '../variables/color.scss';
+@import '../variables/style.scss';
+
+.button {
+  width: 75px;
+  background-color: $black;
+  padding: 10px 30px;
+  border-radius: 35px;
+  border: 1px solid $black;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+
+  .buttonText {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}

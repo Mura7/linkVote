@@ -1,0 +1,40 @@
+@import '../variables/color.scss';
+@import '../variables/style.scss';
+
+.createLinkButton {
+  .buttonContainer {
+    height: 110px;  
+    display: flex;
+    align-items: center;
+    background-color: $light-bg-color;
+    padding: 5px;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $border-hover-color;
+    }
+
+    .iconContainer {
+        width: 100px;
+        height: 100px;
+        border-radius: $border-radius;
+        background-color: $dark-bg-color;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon {
+            font-size: 90px;
+            color: $black;
+        }
+    }
+
+    .textContainer {
+        flex: 1;
+        justify-content: center;
+        padding: 0 20px;
+    }
+  }
+}

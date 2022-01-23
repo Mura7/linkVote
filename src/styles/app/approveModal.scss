@@ -1,0 +1,63 @@
+@import '../variables/color.scss';
+@import '../variables/style.scss';
+
+.approveModalComponent {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 50vw;
+    background-color: $dark-bg-color;
+    border: 1px solid #57ae41;
+    box-shadow: 10px 5px 30px 7px rgba(0, 0, 0, 0.22);
+
+    .headerContainer {
+      display: flex;
+      background-color: $black;
+      padding: 5px 10px;
+      .headerTitle {
+        flex: 1;
+        font-size: 20px;
+        text-align: left;
+        color: $white;
+        font-weight: bold;
+      }
+      .cancel {
+        font-size: 20px;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+
+    .content {
+      padding: 30px;
+      .contentBody {
+        margin: 15px 0;
+
+        .message {
+          color: $text-gray-color;
+          font-weight: bold;
+          font-size: 20px;
+        }
+
+        .name {
+          color: $black;
+          font-weight: bold;
+          font-size: 30px;
+        }
+      }
+      .buttons {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    .modalText {
+      font-size: 30px;
+      color: #57ae41;
+    }
+  }
+}
