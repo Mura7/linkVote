@@ -25,14 +25,12 @@ export default class LinkList {
       } else if (this.orderBy === 'lessVote') {
         return a.vote - b.vote || dateOrder;
       }
-      console.log('bura', this);
       return dateOrder;
     });
     return this.paginate(list, page_number);
   }
   setList(newList) {
     localStorage.setItem('myList', JSON.stringify(newList));
-    console.log(newList, 'newList');
     this.list = newList;
   }
   addLink(name, url) {
@@ -40,7 +38,7 @@ export default class LinkList {
     const newList = [...this.list, newListItem];
     this.setList(newList);
   }
-  removeLink(id){
+  removeLink(id) {
     const index = this.findItemIndex(id);
     this.list.splice(index, 1);
     this.setList(this.list);
